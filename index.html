@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="register.jpg" alt="register">
+        </div>
+        <form>
+            <!-- Start Name -->
+            <div class="mainHolder">
+                <!-- not less than 3 -not empty- no numbers in it -->
+                <input type="text" placeholder="Full Name" id="fullname" />
+                <div class="errorMsg"></div>
+            </div>
+            <!-- End name -->
+
+            <!-- Start Username -->
+            <div class="mainHolder">
+                <!-- not less than 3 -not empty -->
+                <input type="text" placeholder="User Name" id="username" />
+                <div class="errorMsg"></div>
+            </div>
+            <!-- End Username -->
+
+            <!-- Start Email -->
+            <div class="mainHolder">
+                <!-- not empty- characters and numbers in it- include @ -->
+                <input type="email" placeholder="Email" id="email" />
+                <div class="errorMsg"></div>
+            </div>
+            <!-- End Email -->
+
+            <!-- Start Password -->
+            <div class="mainHolder">
+                <!-- not less than 8 -not empty-->
+                <input type="password" placeholder="Password" id="password" />
+                <div class="errorMsg"></div>
+            </div>
+            <!-- End Password -->
+
+            <!-- Start Confirm Password -->
+            <div class="mainHolder">
+                <!-- match password-->
+                <input type="password" placeholder="Confirm Password" id="confirmpassword" />
+                <div class="errorMsg"></div>
+            </div>
+            <!-- End Confirm Password -->
+
+
+            <!-- Start Gender -->
+            <div class="mainHolder">
+                <input type="radio" value="male" name="gendergroup" class="gender" /><span>Male</span>
+                <input type="radio" value="female" name="gendergroup" class="gender" /><span>Female</span>
+                <div class="errorMsg"></div>
+            </div>
+            <!-- End Gender -->
+
+            <input type="submit" value="Sign up" id="btn" />
+
+        </form>
+    </div>
+    <script src='js/form.js'></script>
+</body>
+
+</html>

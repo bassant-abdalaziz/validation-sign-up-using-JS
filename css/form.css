@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gainsboro;
+    box-shadow: 1px 2px 3px gainsboro;
+    padding: 50px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 100px auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 50px;
+}
+
+@media (max-width:1120px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+img {
+    transition: 0.5s;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+form {
+    width: 50%;
+}
+
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    font-size: 17px;
+    color: rgb(81, 81, 81);
+    outline: none;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 8px;
+    width: 90%;
+    height: 40px;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+
+form input.success {
+    border: 2px solid rgb(37, 246, 75);
+}
+
+form input.fail {
+    border: 2px solid rgb(246, 37, 37);
+}
+
+form input[type="submit"] {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(254, 254, 254);
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(154, 77, 210);
+}
+
+
+@media (max-width:767px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .image {
+        width: 250px;
+    }
+
+    form,
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"] {
+        width: 100%;
+    }
+}
+
+form input[type="radio"]+span {
+    margin: 0 5px;
+}
+
+.mainHolder {
+    margin-bottom: 20px;
+}
+
+.errorMsg {
+    color: red;
+    margin-left: 10px;
+}
